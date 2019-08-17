@@ -110,3 +110,6 @@ plugins=(
 
 # Source your personal aliases
 source ~/.aliases
+
+# Use vim binding in zsh
+bindkey -v
