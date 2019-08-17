@@ -114,4 +114,9 @@ source ~/.aliases
 # Use vim binding in zsh
 bindkey -v
 
+# fzz stuff
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Fix locale related errors
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
