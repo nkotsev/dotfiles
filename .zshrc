@@ -113,3 +113,5 @@ source ~/.aliases
 
 # Use vim binding in zsh
 bindkey -v
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
