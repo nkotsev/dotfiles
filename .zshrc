@@ -108,4 +108,5 @@ plugins=(
   ruby
 )
 
+# Source your personal aliases
 source ~/.aliases
