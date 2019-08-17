@@ -107,3 +107,5 @@ plugins=(
   rbenv
   ruby
 )
+
+source ~/.aliases
