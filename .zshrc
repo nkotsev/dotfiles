@@ -120,3 +120,8 @@ bindkey -v
 # Fix locale related errors
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# Bind reverse search
+bindkey '^R' history-incremental-search-backward
+
+[ -f ~/.aliases.local ] && source ~/.aliases.local
