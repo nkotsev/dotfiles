@@ -126,3 +126,9 @@ export LANG=en_US.UTF-8
 
 
 [ -f ~/.aliases.local ] && source ~/.aliases.local
+
+# Some default configurations
+export EDITOR="vim"
+
+# rbenv initialization
+eval "$(rbenv init -)"
