@@ -1,6 +1,4 @@
-if &compatible
-  set nocompatible
-endif
+set nocompatible
 
 " Show partial commands in the last line of the screen
 set showcmd
@@ -27,9 +25,6 @@ set laststatus=2
 " dialogue asking if you wish to save changed files.
 set confirm
 
-" Use visual bell instead of beeping when doing something wrong
-set visualbell
-
 " Use two spaces instead of tabs
 set tabstop=2 shiftwidth=2 expandtab
 "
@@ -39,6 +34,19 @@ set number
 " Remove wrap
 set nowrap
 
-" Use local vimrcs
-set exrc
-set secure
+" Enable syntax highlighting
+syntax on
+
+" Add fzf to vim's runtime path in order to use it for junegunn/fzf
+set rtp+=/usr/local/opt/fzf
+
+" Use guicolors in iterm
+if $TERM_PROGRAM == 'iTerm'
+  set termguicolors
+endif
+
+" Source plugins
+source ~/.vim/plugins.vim
+
+" Source keybindings
+source ~/.vim/bindings.vim
