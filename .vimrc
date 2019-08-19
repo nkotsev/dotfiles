@@ -45,6 +45,11 @@ if $TERM_PROGRAM == 'iTerm'
   set termguicolors
 endif
 
+" Use space as leader
+noremap <Space> <Nop>
+let mapleader=" "
+
+
 " Source plugins
 source ~/.vim/plugins.vim
 
@@ -52,7 +57,6 @@ source ~/.vim/plugins.vim
 source ~/.vim/bindings.vim
 
 " Lightline configuration
-" let g:lightline = { 'colorscheme': 'dracula' }
 source ~/.vim/lightline_config.vim
 
 " Source coc.nvim configuration
