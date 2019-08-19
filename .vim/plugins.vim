@@ -8,6 +8,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 
 " Colorschemes
 Plug 'dracula/vim', { 'as': 'dracula' }

@@ -110,6 +110,7 @@ plugins=(
 
 # Source your personal aliases
 source ~/.aliases
+[ -f ~/.aliases.local ] && source ~/.aliases.local
 
 # Use vim binding in zsh
 bindkey -v
@@ -125,7 +126,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 
-[ -f ~/.aliases.local ] && source ~/.aliases.local
 
 # Some default configurations
 export EDITOR="vim"
