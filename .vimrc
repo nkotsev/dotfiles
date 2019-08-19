@@ -50,3 +50,7 @@ source ~/.vim/plugins.vim
 
 " Source keybindings
 source ~/.vim/bindings.vim
+
+" Lightline configuration
+" let g:lightline = { 'colorscheme': 'dracula' }
+source ~/.vim/lightline_config.vim
