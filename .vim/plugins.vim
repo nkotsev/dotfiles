@@ -1,7 +1,8 @@
 call plug#begin('~/.vim/plugged')
 
 " Base Plugins
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug '/usr/local/opt/fzf'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-sensible'

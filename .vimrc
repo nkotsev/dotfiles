@@ -38,7 +38,7 @@ set nowrap
 syntax on
 
 " Add fzf to vim's runtime path in order to use it for junegunn/fzf
-set rtp+=/usr/local/opt/fzf
+set rtp+=~/.fzf/bin/fzf
 
 " Use guicolors in iterm
 if $TERM_PROGRAM == 'iTerm'
