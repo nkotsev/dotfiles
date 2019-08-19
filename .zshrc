@@ -132,3 +132,6 @@ export EDITOR="vim"
 
 # rbenv initialization
 eval "$(rbenv init -)"
+
+# Term colors
+export TERM=screen-256color

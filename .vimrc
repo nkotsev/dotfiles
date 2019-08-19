@@ -61,3 +61,5 @@ source ~/.vim/lightline_config.vim
 
 " Source coc.nvim configuration
 source ~/.vim/coc_config.vim
+
+colorscheme gruvbox
