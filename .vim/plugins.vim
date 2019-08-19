@@ -9,6 +9,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'scrooloose/nerdtree'
 
 " Colorschemes
 Plug 'dracula/vim', { 'as': 'dracula' }
