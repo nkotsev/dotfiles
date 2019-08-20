@@ -10,6 +10,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'scrooloose/nerdtree'
+Plug 'janko/vim-test'
+Plug 'airblade/vim-gitgutter'
 
 " Colorschemes
 Plug 'dracula/vim', { 'as': 'dracula' }

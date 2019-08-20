@@ -63,3 +63,8 @@ source ~/.vim/lightline_config.vim
 source ~/.vim/coc_config.vim
 
 colorscheme gruvbox
+
+" Set vim-test strategy
+let test#strategy = "vimterminal"
+
+

@@ -12,3 +12,8 @@ command! Q noautocmd q
 command! Wq noautocmd wq
 command! WQ noautocmd wq
 command! Wqa noautocmd wqa
+
+nnoremap <silent> <Leader>tt :TestFile<CR>
+nnoremap <silent> <Leader>ts :TestNearest<CR>
+nnoremap <silent> <Leader>ta :TestSuite<CR>
+
