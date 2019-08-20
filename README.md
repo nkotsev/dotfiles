@@ -1,2 +1,2 @@
 # Nikolay's dotfiles
-Well the name say's it all.
+Yet another dotfiles repository
