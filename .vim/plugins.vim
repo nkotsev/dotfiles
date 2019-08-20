@@ -12,6 +12,7 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'janko/vim-test'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-surround'
 
 " Colorschemes
 Plug 'dracula/vim', { 'as': 'dracula' }
