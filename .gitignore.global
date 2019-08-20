@@ -50,3 +50,7 @@ tags
 [._]*.un~
 
 # End of https://www.gitignore.io/api/vim,osx
+
+### Ruby ###
+# Solargraph (Ruby language server) config
+.solargraph.yml
