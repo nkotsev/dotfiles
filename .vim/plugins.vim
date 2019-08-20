@@ -18,8 +18,11 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'morhetz/gruvbox'
 
 " Languages
+"" Ruby
+Plug 'tpope/vim-rails', { 'for': 'ruby'}
+Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
 "" Clojure
-Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
 " Initialize plugin system
 call plug#end()
