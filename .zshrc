@@ -135,3 +135,6 @@ eval "$(rbenv init -)"
 
 # Term colors
 export TERM=screen-256color
+
+# Add ~/.scripts to PATH
+export PATH="$PATH:$HOME/.scripts"
