@@ -13,6 +13,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'janko/vim-test'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
+Plug 'rhysd/git-messenger.vim'
 
 " Colorschemes
 Plug 'dracula/vim', { 'as': 'dracula' }
