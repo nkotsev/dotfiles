@@ -10,8 +10,7 @@ nnoremap <C-b> :Buffers<CR>
 nnoremap <C-p> :Files<CR>
 
 "vim-fugitive
-nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gs :Gstatus<CR><C-w>10_
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gw :Gwrite<CR>
@@ -23,8 +22,8 @@ nnoremap <leader>gm :GitMessenger<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
 
 " vim-test
-nnoremap <silent> <Leader>tt :TestFile<CR>
-nnoremap <silent> <Leader>ts :TestNearest<CR>
-nnoremap <silent> <Leader>ta :TestSuite<CR>
+nnoremap <silent> <Leader>tt :TestFile<CR><C-w>10_
+nnoremap <silent> <Leader>ts :TestNearest<CR><C-w>10_
+nnoremap <silent> <Leader>ta :TestSuite<CR><C-w>10_
 
 set langmap+=чявертъуиопшщасдфгхйклзьцжбнмЧЯВЕРТЪУИОПШЩАСДФГХЙКЛЗѝЦЖБНМ;`qwertyuiop[]asdfghjklzxcvbnm~QWERTYUIOP{}ASDFGHJKLZXCVBNM,ю\\,Ю\|,
