@@ -27,3 +27,4 @@ nnoremap <silent> <Leader>tt :TestFile<CR>
 nnoremap <silent> <Leader>ts :TestNearest<CR>
 nnoremap <silent> <Leader>ta :TestSuite<CR>
 
+set langmap+=чявертъуиопшщасдфгхйклзьцжбнмЧЯВЕРТЪУИОПШЩАСДФГХЙКЛЗѝЦЖБНМ;`qwertyuiop[]asdfghjklzxcvbnm~QWERTYUIOP{}ASDFGHJKLZXCVBNM,ю\\,Ю\|,
