@@ -24,6 +24,6 @@ nnoremap <F2> :NERDTreeToggle<CR>
 " vim-test
 nnoremap <silent> <Leader>tt :TestFile<CR><C-w>10_
 nnoremap <silent> <Leader>ts :TestNearest<CR><C-w>10_
-nnoremap <silent> <Leader>ta :TestSuite<CR><C-w>10_
+nnoremap <silent> <Leader>ta :TestSuite<CR><C-w>1_
 
 set langmap+=чявертъуиопшщасдфгхйклзьцжбнмЧЯВЕРТЪУИОПШЩАСДФГХЙКЛЗѝЦЖБНМ;`qwertyuiop[]asdfghjklzxcvbnm~QWERTYUIOP{}ASDFGHJKLZXCVBNM,ю\\,Ю\|,
