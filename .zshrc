@@ -138,3 +138,9 @@ export TERM=screen-256color
 
 # Add ~/.scripts to PATH
 export PATH="$PATH:$HOME/.scripts"
+
+# Init pyenv
+eval "$(pyenv init -)"
+
+# Load zplug
+source ~/.zplug.zsh
