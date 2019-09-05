@@ -62,9 +62,10 @@ source ~/.vim/lightline_config.vim
 " Source coc.nvim configuration
 source ~/.vim/coc_config.vim
 
+" Source abbreviations
+source ~/.vim/abbreviations.vim
+
 colorscheme gruvbox
 
 " Set vim-test strategy
 let test#strategy = "vimterminal"
-
-
