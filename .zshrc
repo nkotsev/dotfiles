@@ -144,3 +144,5 @@ eval "$(pyenv init -)"
 
 # Load zplug
 source ~/.zplug.zsh
+
+export HOMEBREW_GITHUB_API_TOKEN=$(cat ~/.secrets/homebrew-personal-token)
