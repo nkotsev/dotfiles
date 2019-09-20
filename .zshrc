@@ -139,6 +139,9 @@ export TERM=screen-256color
 # Add ~/.scripts to PATH
 export PATH="$PATH:$HOME/.scripts"
 
+# Base git branch for reviews
+export REVIEW_BASE=master
+
 # Init pyenv
 eval "$(pyenv init -)"
 
