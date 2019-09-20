@@ -27,6 +27,8 @@ Plug 'tpope/vim-rails', { 'for': 'ruby'}
 Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
 "" Clojure
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+"" Markdown
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 " Initialize plugin system
 call plug#end()
