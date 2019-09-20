@@ -149,3 +149,8 @@ eval "$(pyenv init -)"
 source ~/.zplug.zsh
 
 export HOMEBREW_GITHUB_API_TOKEN=$(cat ~/.secrets/homebrew-personal-token)
+
+# Multiline editing via vim with "v" binding
+autoload -U edit-command-line
+zle -N edit-command-line 
+bindkey -M vicmd v edit-command-line
