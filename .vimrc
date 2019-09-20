@@ -40,6 +40,9 @@ syntax on
 " Add fzf to vim's runtime path in order to use it for junegunn/fzf
 set rtp+=~/.fzf/bin/fzf
 
+" Toggle paste mode, while in insert
+set pastetoggle=<F2>
+
 " Use guicolors in iterm
 if $TERM_PROGRAM == 'iTerm'
   set termguicolors
