@@ -54,6 +54,7 @@ tags
 ### Ruby ###
 # Solargraph (Ruby language server) config
 .solargraph.yml
+rails_solargraph_extension.rb
 
 ### zsh-autoenv ###
 # Ignore autoenv files
