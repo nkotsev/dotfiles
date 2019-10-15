@@ -14,6 +14,7 @@ nnoremap <leader>gs :Gstatus<CR><C-w>10_
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gw :Gwrite<CR>
+nnoremap <leader>g! :Gdiffsplit!<CR>
 
 "git-messenger
 nnoremap <leader>gm :GitMessenger<CR>
