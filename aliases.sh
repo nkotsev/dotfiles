@@ -13,6 +13,7 @@ alias dotfiles='cd ~/.dotfiles'
 alias dc='docker-compose'
 alias beke='bundle exec rake'
 alias pyma='python3 manage.py'
+alias :q='exit'
 
 # Functions
 # fbr - fuzzy branch change
@@ -30,4 +31,9 @@ fd() {
   dir=$(find ${1:-.} -path '*/\.*' -prune \
                   -o -type d -print 2> /dev/null | fzf +m) &&
   cd "$dir"
+}
+
+# peek - open small tmux split with a file
+peek() {
+  tmux split-window -p 25 "$EDITOR" "$@"
 }
