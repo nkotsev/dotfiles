@@ -9,6 +9,9 @@ command! Wqa noautocmd wqa
 nnoremap <C-b> :Buffers<CR>
 nnoremap <C-p> :Files<CR>
 
+"Unbind ex-mode
+map Q <Nop>
+
 "vim-fugitive
 nnoremap <leader>gs :Gstatus<CR><C-w>10_
 nnoremap <leader>gb :Gblame<CR>
@@ -23,8 +26,20 @@ nnoremap <leader>gm :GitMessenger<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
 
 " vim-test
-nnoremap <silent> <Leader>tt :TestFile<CR><C-w>10_
-nnoremap <silent> <Leader>ts :TestNearest<CR><C-w>10_
-nnoremap <silent> <Leader>ta :TestSuite<CR><C-w>1_
+if has('nvim')
+  nnoremap <silent> <Leader>tt :TestFile<CR>
+  nnoremap <silent> <Leader>ts :TestNearest<CR>
+  nnoremap <silent> <Leader>ta :TestSuite<CR>
+else
+  nnoremap <silent> <Leader>tt :TestFile<CR><C-w>10_
+  nnoremap <silent> <Leader>ts :TestNearest<CR><C-w>10_
+  nnoremap <silent> <Leader>ta :TestSuite<CR><C-w>1_
+endif
+
+if exists(':GitGutterNextHunk')
+  nnoremap <silent> ]h <Plug>(GitGutterNextHunk)
+  nnoremap <silent> [h <Plug>(GitGutterPrevHunk)
+endif
 
 set langmap+=чявертъуиопшщасдфгхйклзьцжбнмЧЯВЕРТЪУИОПШЩАСДФГХЙКЛЗѝЦЖБНМ;`qwertyuiop[]asdfghjklzxcvbnm~QWERTYUIOP{}ASDFGHJKLZXCVBNM,ю\\,Ю\|,
+

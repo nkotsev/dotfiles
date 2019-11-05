@@ -17,6 +17,7 @@ Plug 'janko/vim-test'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 Plug 'rhysd/git-messenger.vim'
+Plug 'tpope/vim-dispatch'
 
 " Colorschemes
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -26,6 +27,7 @@ Plug 'morhetz/gruvbox'
 "" Ruby
 Plug 'tpope/vim-rails', { 'for': 'ruby'}
 Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
+Plug 'keith/rspec.vim'
 "" Clojure
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 "" Markdown
