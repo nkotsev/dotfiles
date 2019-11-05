@@ -107,6 +107,7 @@ plugins=(
   rake
   rbenv
   ruby
+  jira
 )
 
 # Source your personal aliases
