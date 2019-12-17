@@ -59,3 +59,7 @@ rails_solargraph_extension.rb
 ### zsh-autoenv ###
 # Ignore autoenv files
 .autoenv.zsh
+
+### Clojure ###
+# Ignore clojure-lsp directory
+.lsp/
