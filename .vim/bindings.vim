@@ -27,9 +27,9 @@ nnoremap <F2> :NERDTreeToggle<CR>
 
 " vim-test
 if has('nvim')
-  nnoremap <silent> <Leader>tt :TestFile<CR>
-  nnoremap <silent> <Leader>ts :TestNearest<CR>
-  nnoremap <silent> <Leader>ta :TestSuite<CR>
+  nnoremap <silent> <Leader>tt :TestFile<CR><C-\><C-N><C-W>10_a
+  nnoremap <silent> <Leader>ts :TestNearest<CR><C-\><C-N><C-W>10_a
+  nnoremap <silent> <Leader>ta :TestSuite<CR><C-\><C-N><C-W>10_a
 else
   nnoremap <silent> <Leader>tt :TestFile<CR><C-w>10_
   nnoremap <silent> <Leader>ts :TestNearest<CR><C-w>10_
