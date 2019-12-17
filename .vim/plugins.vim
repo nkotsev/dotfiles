@@ -29,9 +29,17 @@ Plug 'tpope/vim-rails', { 'for': 'ruby'}
 Plug 'ecomba/vim-ruby-refactoring', { 'for': 'ruby' }
 Plug 'keith/rspec.vim'
 "" Clojure
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+" Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plug 'luochen1990/rainbow'
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+if has('nvim')
+  Plug 'Olical/conjure', { 'tag': 'v2.0.0', 'do': 'bin/compile' }
+endif
+" Other filetypes
 "" Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
-
+"" CSV
+Plug 'chrisbra/csv.vim', { 'for': 'csv' }
 " Initialize plugin system
 call plug#end()

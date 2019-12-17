@@ -1,0 +1,30 @@
+{
+  "solargraph.formatting": true,
+  "solargraph.hover": true,
+  "solargraph.autoformat": true,
+  "solargraph.diagnostics": true,
+  "solargraph.commandPath": "/Users/nikolay.kotzev/.rbenv/shims/solargraph",
+  "solargraph.symbols": true,
+  "solargraph.references": true,
+  "python.linting.pylintArgs": ["--load-plugins=pylint_django", "--rcfile ./.pylintrc"],
+  "python.jediEnabled": false,
+  "python.analysis.disabled": ["unresolved-import", "undefined-variable"],
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    },
+    "clojure-lsp": {
+      "command": "bash",
+      "args": ["-c", "clojure-lsp"],
+      "filetypes": ["clojure"],
+      "rootPatterns": ["project.clj"],
+      "additionalSchemes": ["jar", "zipfile"],
+      "trace.server": "verbose",
+      "initializationOptions": {
+      }
+    }
+  }
+}
