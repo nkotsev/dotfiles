@@ -1,12 +1,13 @@
 #!/bin/bash
 
-alias aliases='vim ~/.aliases'
-alias vimrc='vim ~/.vimrc'
-alias zshrc='vim ~/.zshrc'
+alias aliases='nvim ~/.aliases'
+alias vimrc='nvim ~/.vimrc'
+alias nvimrc='nvim ~/.config/nvim/init.vim'
+alias zshrc='nvim ~/.zshrc'
 alias resource='source ~/.zshrc'
 alias gs='git status'
 alias pls='sudo'
-alias vimplug='vim ~/.vim/plugins.vim'
+alias vimplug='nvim ~/.vim/plugins.vim'
 alias dev='cd ~/Development'
 alias tmuxconf='vim ~/.tmux.conf'
 alias dotfiles='cd ~/.dotfiles'
@@ -14,6 +15,7 @@ alias dc='docker-compose'
 alias beke='bundle exec rake'
 alias pyma='python3 manage.py'
 alias :q='exit'
+alias mux='tmuxinator'
 
 # Functions
 # fbr - fuzzy branch change
