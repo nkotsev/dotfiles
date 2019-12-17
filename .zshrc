@@ -1,6 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Start tmux on zsh startup
+export ZSH_TMUX_AUTOSTART=true
+export ZSH_TMUX_AUTOSTART_ONCE=true
+export ZSH_TMUX_AUTOCONNECT=true
+export ZSH_TMUX_AUTOQUIT=false
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/nikolay.kotzev/.oh-my-zsh"
 
@@ -68,8 +74,25 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
 
+plugins=(
+  brew
+  bundler
+  django
+  docker
+  dotenv
+  git
+  github
+  python
+  rails
+  rake
+  rbenv
+  redis-cli
+  ruby
+  tmux
+  vi-mode
+  z
+)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -98,17 +121,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-plugins=(
-  git
-  github
-  bundler
-  dotenv
-  osx
-  rake
-  rbenv
-  ruby
-  jira
-)
 
 # Source your personal aliases
 source ~/.aliases
