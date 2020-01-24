@@ -41,5 +41,7 @@ endif
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 "" CSV
 Plug 'chrisbra/csv.vim', { 'for': 'csv' }
+"" TOML
 " Initialize plugin system
+Plug 'cespare/vim-toml'
 call plug#end()
