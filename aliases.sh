@@ -16,6 +16,10 @@ alias beke='bundle exec rake'
 alias pyma='python3 manage.py'
 alias :q='exit'
 alias mux='tmuxinator'
+alias poe='poetry'
+alias poes='poetry shell'
+alias poer='poetry run'
+alias vglog="git log -p -40 | vim - -R -c 'set foldmethod=syntax'"
 
 # Functions
 # fbr - fuzzy branch change
@@ -38,4 +42,8 @@ fd() {
 # peek - open small tmux split with a file
 peek() {
   tmux split-window -p 25 "$EDITOR" "$@"
+}
+
+csvr() {
+  cat $1 | sed 's/,/,\ /g' | column -t -s, | less -S
 }

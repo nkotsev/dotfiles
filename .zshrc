@@ -83,6 +83,7 @@ plugins=(
   dotenv
   git
   github
+  poetry
   python
   rails
   rake
@@ -142,7 +143,11 @@ export LANG=en_US.UTF-8
 
 
 # Some default configurations
-export EDITOR="vim"
+if `which nvim > /dev/null`; then
+  export EDITOR="nvim"
+else
+  export EDITOR="vim"
+fi
 
 # rbenv initialization
 eval "$(rbenv init -)"
@@ -150,8 +155,9 @@ eval "$(rbenv init -)"
 # Term colors
 export TERM=screen-256color
 
-# Add ~/.scripts to PATH
-export PATH="$PATH:$HOME/.scripts"
+# Additions to path
+export PATH="$PATH:$HOME/.scripts:$HOME/bin"
+export PATH="$HOME/.poetry/bin:$PATH"
 
 # Base git branch for reviews
 export REVIEW_BASE=master
