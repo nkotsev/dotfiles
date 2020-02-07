@@ -39,6 +39,8 @@ if has('nvim')
 else
   Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
   Plug 'guns/vim-slamhound'
+  Plug 'venantius/vim-cljfmt'
+  Plug 'venantius/vim-eastwood'
 endif
 
 " Other filetypes

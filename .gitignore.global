@@ -63,3 +63,4 @@ rails_solargraph_extension.rb
 ### Clojure ###
 # Ignore clojure-lsp directory
 .lsp/
+/.conjure.edn
