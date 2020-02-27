@@ -80,7 +80,6 @@ plugins=(
   bundler
   django
   docker
-  dotenv
   git
   github
   poetry
