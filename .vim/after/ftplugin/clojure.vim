@@ -1,4 +1,5 @@
 let g:rainbow_active = 1 
+nnoremap <Space>r :RainbowToggle<cr>
 
 if has('nvim')
   nnoremap <Space>ee :ConjureEvalCurrentForm<cr>
@@ -16,6 +17,7 @@ if has('nvim')
   let g:conjure_log_blacklist = ["up", "ret", "ret-multiline", "load-file", "eval"]
   let g:conjure_log_size_small = 20
   let g:conjure_log_size_big = 20
+  let g:conjure_log_auto_close = v:false
 
   setlocal colorcolumn=80,120
 
