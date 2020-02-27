@@ -18,6 +18,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 Plug 'rhysd/git-messenger.vim'
 Plug 'tpope/vim-dispatch'
+Plug 'camspiers/animate.vim'
+Plug 'camspiers/lens.vim'
+Plug 'tpope/vim-projectionist'
 
 " Colorschemes
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -33,6 +36,7 @@ Plug 'keith/rspec.vim'
 Plug 'luochen1990/rainbow'
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'tpope/vim-classpath'
 
 if has('nvim')
   Plug 'Olical/conjure', { 'tag': 'v2.0.0', 'do': 'bin/compile' }
