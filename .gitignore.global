@@ -48,6 +48,9 @@ Sessionx.vim
 tags
 # Persistent undo
 [._]*.un~
+# Local configurations for projectionist.vim
+.projections.json
+
 
 # End of https://www.gitignore.io/api/vim,osx
 
@@ -64,3 +67,5 @@ rails_solargraph_extension.rb
 # Ignore clojure-lsp directory
 .lsp/
 /.conjure.edn
+.conjure.port
+.rebel_readline_history
