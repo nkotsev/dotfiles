@@ -18,7 +18,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-surround'
 Plug 'rhysd/git-messenger.vim'
 Plug 'tpope/vim-dispatch'
-Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
 Plug 'tpope/vim-projectionist'
 
