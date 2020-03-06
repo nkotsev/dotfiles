@@ -20,6 +20,7 @@ alias poe='poetry'
 alias poes='poetry shell'
 alias poer='poetry run'
 alias vglog="git log -p -40 | vim - -R -c 'set foldmethod=syntax'"
+alias dps='docker ps'
 
 # Functions
 # fbr - fuzzy branch change
