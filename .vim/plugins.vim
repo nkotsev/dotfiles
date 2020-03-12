@@ -37,14 +37,11 @@ Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'tpope/vim-classpath'
 
-if has('nvim')
-  Plug 'Olical/conjure', { 'tag': 'v2.0.0', 'do': 'bin/compile' }
-else
-  Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-  Plug 'guns/vim-slamhound'
-  Plug 'venantius/vim-cljfmt'
-  Plug 'venantius/vim-eastwood'
-endif
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plug 'tpope/vim-salve'
+Plug 'guns/vim-slamhound'
+Plug 'venantius/vim-cljfmt'
+Plug 'venantius/vim-eastwood'
 
 " Other filetypes
 "" Markdown
