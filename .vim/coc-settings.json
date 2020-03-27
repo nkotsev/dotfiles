@@ -6,6 +6,7 @@
   "solargraph.commandPath": "/Users/nikolay.kotzev/.rbenv/shims/solargraph",
   "solargraph.symbols": true,
   "solargraph.references": true,
+  "solargraph.definitions": true,
   "python.linting.pylintArgs": ["--load-plugins=pylint_django", "--rcfile ./.pylintrc"],
   "python.jediEnabled": true,
   "python.jediPath": "/usr/local/lib/python3.7/site-packages/jedi/",
