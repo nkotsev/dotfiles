@@ -9,7 +9,7 @@ alias gs='git status'
 alias pls='sudo'
 alias vimplug='nvim ~/.vim/plugins.vim'
 alias dev='cd ~/Development'
-alias tmuxconf='vim ~/.tmux.conf'
+alias tmuxconf='nvim ~/.tmux.conf'
 alias dotfiles='cd ~/.dotfiles'
 alias dc='docker-compose'
 alias beke='bundle exec rake'
@@ -19,7 +19,7 @@ alias mux='tmuxinator'
 alias poe='poetry'
 alias poes='poetry shell'
 alias poer='poetry run'
-alias vglog="git log -p -40 | vim - -R -c 'set foldmethod=syntax'"
+alias vglog="git log -p -40 | nvim - -R -c 'set foldmethod=syntax'"
 alias dps='docker ps'
 
 # Functions

@@ -31,7 +31,7 @@
     " }
     " A LightLine Theme
         let g:lightline = {
-        \ 'colorscheme': 'gruvbox',
+        \ 'colorscheme': 'dracula',
         \ 'active': {
         \  'left': [[ 'mode' ], [ 'fugitive' ], [ 'filename' ]],
         \  'right': [[ 'linenums' ], [ 'fileencoding', 'fileformat' ], [ 'filetype']]

@@ -48,6 +48,10 @@ if $TERM_PROGRAM == 'iTerm'
   set termguicolors
 endif
 
+if $TERM == 'xterm-256color'
+  set termguicolors
+endif
+
 " Use space as leader
 noremap <Space> <Nop>
 let mapleader=" "
@@ -68,7 +72,9 @@ source ~/.vim/coc_config.vim
 " Source abbreviations
 source ~/.vim/abbreviations.vim
 
-colorscheme gruvbox
+colorscheme dracula
 
 " Set vim-test strategy
 let test#strategy = "vimterminal"
+" Add fzf to runtime path
+set rtp+=~/.fzf

@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 " Base Plugins
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug '/usr/local/opt/fzf'
 Plug 'tpope/vim-sensible'
@@ -11,7 +11,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-rhubarb'
 Plug 'itchyny/lightline.vim'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'janko/vim-test'
 Plug 'airblade/vim-gitgutter'
