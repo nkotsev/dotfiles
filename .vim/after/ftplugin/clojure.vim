@@ -31,4 +31,5 @@ if has('nvim')
 
   " Enable omnicompletion
   set omnifunc=syntaxcomplete#Complete
+  nnoremap <buffer> <leader><leader><leader> :IcedCommandPalette<CR>
 endif

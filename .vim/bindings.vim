@@ -18,12 +18,15 @@ nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gw :Gwrite<CR>
 nnoremap <leader>g! :Gdiffsplit!<CR>
+nnoremap <leader>gh :Gbrowse<CR>
+vnoremap <leader>gh :Gbrowse<CR>
 
 "git-messenger
 nnoremap <leader>gm :GitMessenger<CR>
 
 "NERDTree
 nnoremap <F2> :NERDTreeToggle<CR>
+nnoremap <leader>ntf :NERDTreeFind<CR>
 
 " vim-test
 if has('nvim')
@@ -43,3 +46,21 @@ endif
 
 set langmap+=чявертъуиопшщасдфгхйклзьцжбнмЧЯВЕРТЪУИОПШЩАСДФГХЙКЛЗѝЦЖБНМ;`qwertyuiop[]asdfghjklzxcvbnm~QWERTYUIOP{}ASDFGHJKLZXCVBNM,ю\\,Ю\|,
 
+"vim-markdown-preview
+let vim_markdown_preview_hotkey='<C-M>'
+
+" Test for .personal.todo.md
+nnoremap <leader>todo :edit .personal.todo.md<CR>
+
+" Kaocha
+autocmd FileType clojure nmap <silent><buffer> <Leader>ktt <Plug>(iced_kaocha_test_under_cursor)
+autocmd FileType clojure nmap <silent><buffer> <Leader>ktn <Plug>(iced_kaocha_test_ns)
+autocmd FileType clojure nmap <silent><buffer> <Leader>ktr <Plug>(iced_kaocha_test_redo)
+autocmd FileType clojure nmap <silent><buffer> <Leader>ktl <Plug>(iced_kaocha_test_rerun_last)
+
+nmap <Leader>gg  :call CocAction('jumpDefinition', 'vsp')<CR>
+
+" Diff bindings
+nnoremap <Leader>dt :diffthis<CR>
+nnoremap <Leader>do :diffoff<CR>
+nnoremap <Leader>da :diffoff!<CR>

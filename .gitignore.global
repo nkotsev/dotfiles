@@ -51,6 +51,9 @@ tags
 # Local configurations for projectionist.vim
 .projections.json
 
+# Personal todo files for vim-todo
+.personal.todo.md
+
 
 # End of https://www.gitignore.io/api/vim,osx
 
@@ -58,6 +61,7 @@ tags
 # Solargraph (Ruby language server) config
 .solargraph.yml
 rails_solargraph_extension.rb
+.byebug_history
 
 ### zsh-autoenv ###
 # Ignore autoenv files
@@ -69,3 +73,9 @@ rails_solargraph_extension.rb
 /.conjure.edn
 .conjure.port
 .rebel_readline_history
+.clj-kondo
+
+.ctagsignore
+/rails.rb
+
+*.secret.sh

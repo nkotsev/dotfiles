@@ -21,6 +21,10 @@ alias poes='poetry shell'
 alias poer='poetry run'
 alias vglog="git log -p -40 | vim - -R -c 'set foldmethod=syntax'"
 alias dps='docker ps'
+alias ggpushf='git push origin $(git_current_branch) --force-with-lease'
+alias sft-ssh='sft ssh $(sft list-servers | fzf | cut -f 1 -d" ")'
+alias xit='exit'
+alias k='kubectl'
 
 # Functions
 # fbr - fuzzy branch change
@@ -47,4 +51,8 @@ peek() {
 
 csvr() {
   cat $1 | sed 's/,/,\ /g' | column -t -s, | less -S
+}
+
+md2html() {
+  pandoc -c pandoc_github.css -s --metadata title="Rails overview" -f gfm -t html $1 -o $2
 }

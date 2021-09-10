@@ -3,4 +3,5 @@
         :aliases {"slamhound" ["run" "-m" "slam.hound"]
                   "rebl" ["trampoline" "run" "-m" "rebel-readline.main"]}
         :plugins [[jonase/eastwood "0.3.7"]
-                  [cider/cider-nrepl "0.24.0"]]}}
+                  [cider/cider-nrepl "0.24.0"]
+                  [lein-pprint "1.3.2"]]}}

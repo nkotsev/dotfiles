@@ -125,6 +125,7 @@ source $ZSH/oh-my-zsh.sh
 # Source your personal aliases
 source ~/.aliases
 [ -f ~/.aliases.local ] && source ~/.aliases.local
+[ -f ~/.aws_functions ] && source ~/.aws_functions
 
 # Use vim binding in zsh
 bindkey -v
@@ -157,23 +158,29 @@ export TERM=screen-256color
 # Additions to path
 export PATH="$PATH:$HOME/.scripts:$HOME/bin"
 export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$PATH:$HOME/Library/Python/3.8/bin"
+export PATH="$PATH:$HOME/.vim/plugged/vim-iced/bin"
 
 # Base git branch for reviews
 export REVIEW_BASE=master
 
+
 # Init pyenv
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 
 # Load zplug
-source ~/.zplug.zsh
+# source ~/.zplug.zsh
 
-export HOMEBREW_GITHUB_API_TOKEN=$(cat ~/.secrets/homebrew-personal-token)
+export HOMEBREW_GITHUB_API_TOKEN=$(cat ~/.secrets/homebrew-personal-token-v2)
+export GITHUB_TOKEN=$(cat ~/.secrets/homebrew-personal-token-v2)
 
 # Multiline editing via vim with "v" binding
 autoload -U edit-command-line
-zle -N edit-command-line 
+zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
+
+# Disabled because it is slowing shell startup significantly
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -181,3 +188,22 @@ export NVM_DIR="$HOME/.nvm"
 
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --no-ignore-vcs'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# # Load up zoxide
+# eval "$(zoxide init zsh)"
+
+# Load up kubectl autocompletions
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
+function fuck_okta_aws() {
+if [ -z "$1" ]; then
+  echo "ERROR => specify profile"
+else
+  /usr/local/bin/okta_aws -u nikolay.kotzev -e https://fundingcircle.okta.com/home/amazon_aws/0oa9dw16cdiT5Hntw0x7/272 -p "$1" -s admin-in-$1 && \
+  source ~/.aws/.aws_env_$1
+fi
+}
+
+eval "$(jump shell)" # Initialize jump
+
+export MANPAGER='nvim +Man!'
