@@ -79,3 +79,6 @@ rails_solargraph_extension.rb
 /rails.rb
 
 *.secret.sh
+
+### Terraform ###
+.terraform/

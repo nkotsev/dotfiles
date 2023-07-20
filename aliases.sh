@@ -1,13 +1,13 @@
 #!/bin/bash
 
-alias aliases='nvim ~/.aliases'
-alias vimrc='nvim ~/.vimrc'
-alias nvimrc='nvim ~/.config/nvim/init.vim'
-alias zshrc='nvim ~/.zshrc'
+alias aliases='${EDITOR:-nvim} ~/.aliases'
+alias vimrc='${EDITOR:-nvim} ~/.vimrc'
+alias nvimrc='${EDITOR:-nvim} ~/.config/nvim/init.vim'
+alias zshrc='${EDITOR:-nvim} ~/.zshrc'
 alias resource='source ~/.zshrc'
 alias gs='git status'
 alias pls='sudo'
-alias vimplug='nvim ~/.vim/plugins.vim'
+alias vimplug='${EDITOR:-nvim} ~/.vim/plugins.vim'
 alias dev='cd ~/Development'
 alias tmuxconf='vim ~/.tmux.conf'
 alias dotfiles='cd ~/.dotfiles'
@@ -25,6 +25,7 @@ alias ggpushf='git push origin $(git_current_branch) --force-with-lease'
 alias sft-ssh='sft ssh $(sft list-servers | fzf | cut -f 1 -d" ")'
 alias xit='exit'
 alias k='kubectl'
+alias kubeclt='kubectl' # Because in some cases I can be a bit dyslexic
 
 # Functions
 # fbr - fuzzy branch change

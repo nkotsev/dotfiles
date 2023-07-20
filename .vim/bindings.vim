@@ -13,13 +13,13 @@ nnoremap <C-p> :Files<CR>
 map Q <Nop>
 
 "vim-fugitive
-nnoremap <leader>gs :Gstatus<CR><C-w>10_
-nnoremap <leader>gb :Gblame<CR>
-nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gs :Git<CR><C-w>10_
+nnoremap <leader>gb :G blame<CR>
+nnoremap <leader>gd :G diff<CR>
 nnoremap <leader>gw :Gwrite<CR>
-nnoremap <leader>g! :Gdiffsplit!<CR>
-nnoremap <leader>gh :Gbrowse<CR>
-vnoremap <leader>gh :Gbrowse<CR>
+nnoremap <leader>g! :G --paginate<CR>
+nnoremap <leader>gh :GBrowse<CR>
+vnoremap <leader>gh :GBrowse<CR>
 
 "git-messenger
 nnoremap <leader>gm :GitMessenger<CR>
@@ -52,11 +52,11 @@ let vim_markdown_preview_hotkey='<C-M>'
 " Test for .personal.todo.md
 nnoremap <leader>todo :edit .personal.todo.md<CR>
 
-" Kaocha
-autocmd FileType clojure nmap <silent><buffer> <Leader>ktt <Plug>(iced_kaocha_test_under_cursor)
-autocmd FileType clojure nmap <silent><buffer> <Leader>ktn <Plug>(iced_kaocha_test_ns)
-autocmd FileType clojure nmap <silent><buffer> <Leader>ktr <Plug>(iced_kaocha_test_redo)
-autocmd FileType clojure nmap <silent><buffer> <Leader>ktl <Plug>(iced_kaocha_test_rerun_last)
+" " Kaocha
+" autocmd FileType clojure nmap <silent><buffer> <Leader>ktt <Plug>(iced_kaocha_test_under_cursor)
+" autocmd FileType clojure nmap <silent><buffer> <Leader>ktn <Plug>(iced_kaocha_test_ns)
+" autocmd FileType clojure nmap <silent><buffer> <Leader>ktr <Plug>(iced_kaocha_test_redo)
+" autocmd FileType clojure nmap <silent><buffer> <Leader>ktl <Plug>(iced_kaocha_test_rerun_last)
 
 nmap <Leader>gg  :call CocAction('jumpDefinition', 'vsp')<CR>
 

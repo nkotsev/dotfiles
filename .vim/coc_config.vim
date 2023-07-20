@@ -112,10 +112,13 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 " " Find symbol of current document
 " nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols
-nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+nnoremap <silent> <space>sy  :<C-u>CocList -I symbols<cr>
 " " Do default action for next item.
 " nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 " " Do default action for previous item.
 " nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " " Resume latest coc list
 " nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+" " Show actions
+nnoremap <silent> <space>sa :<C-u>CocCommand<CR> cSpell.addWordToDictionary<CR>
+

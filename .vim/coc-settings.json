@@ -1,5 +1,5 @@
 {
-  "coc.preferences.timeout": 10000,
+  "suggest.timeout": 10000,
   "solargraph.formatting": true,
   "solargraph.hover": true,
   "solargraph.autoformat": true,
@@ -8,12 +8,7 @@
   "solargraph.symbols": true,
   "solargraph.references": true,
   "solargraph.definitions": true,
-  "python.linting.pylintArgs": ["--load-plugins=pylint_django", "--rcfile ./.pylintrc"],
-  "python.jediEnabled": true,
-  "python.jediPath": "/usr/local/lib/python3.7/site-packages/jedi/",
-  "python.analysis.disabled": ["unresolved-import", "undefined-variable"],
-  "coc.preferences.formatOnSaveFiletypes": ["javascript"],
-  "coc.source.iced.enable": true,
+  "solargraph.logLevel": "warn",
   "languageserver": {
     "bash": {
       "command": "bash-language-server",
@@ -33,6 +28,70 @@
           "project-path": "project.clj",
           "classpath-cmd": ["lein", "classpath"]}]
       }
-    }
-  }
+    },
+		"terraform": {
+			"command": "terraform-ls",
+			"args": ["serve"],
+			"filetypes": [
+				"terraform",
+				"tf"
+			],
+			"initializationOptions": {},
+			"settings": {}
+		}
+  },
+  "cSpell.userWords": [
+    "Cifas",
+    "Honeybadger",
+    "MICROFRONTEND",
+    "Metrix",
+    "Navteq",
+    "Telesign",
+    "angelov",
+    "autoformat",
+    "behaviour",
+    "boto",
+    "builtins",
+    "classpath",
+    "combobox",
+    "craco",
+    "drawdowns",
+    "etls",
+    "favourite",
+    "flexipay",
+    "fundingcircle",
+    "georgi",
+    "gruvbox",
+    "indecies",
+    "iterm",
+    "kotzev",
+    "lein",
+    "linebreak",
+    "listitem",
+    "mentoring",
+    "millis",
+    "moto",
+    "multiline",
+    "nikolay",
+    "nvim",
+    "poll",
+    "simeonov",
+    "solargraph",
+    "sortcode",
+    "stanimir",
+    "suppliers",
+    "testid",
+    "textbox",
+    "tfsec",
+    "threatmetrix",
+    "tmuxinator",
+    "trustpilot",
+    "unformat",
+    "uuidv",
+    "yordan",
+    "zipfile"
+  ],
+  "cSpell.ignoreWords": [
+    "clientlib"
+  ]
 }

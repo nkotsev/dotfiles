@@ -46,19 +46,22 @@ Plug 'tpope/vim-salve', { 'for': 'clojure' }
 Plug 'guns/vim-slamhound', { 'for': 'clojure' }
 
 """ Fireplace
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-Plug 'venantius/vim-cljfmt', { 'for': 'clojure' }
-Plug 'venantius/vim-eastwood', { 'for': 'clojure' }
+" Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+" Plug 'venantius/vim-cljfmt', { 'for': 'clojure' }
+" Plug 'venantius/vim-eastwood', { 'for': 'clojure' }
 
 """ Iced
 " Plug 'liquidz/vim-iced', {'for': 'clojure'}
 " Plug 'liquidz/vim-iced-coc-source', {'for': 'clojure'}
 " Plug 'liquidz/vim-iced-kaocha'
 
+""" Conjure
+Plug 'Olical/conjure'
+
 " Other filetypes
 "" Markdown
 Plug 'JamshedVesuna/vim-markdown-preview'
-" Jsonnet
+"" Jsonnet
 Plug 'google/vim-jsonnet'
 "" CSV
 Plug 'chrisbra/csv.vim', { 'for': 'csv' }
@@ -68,6 +71,12 @@ Plug 'cespare/vim-toml'
 Plug 'gurpreetatwal/vim-avro'
 "" Handlebards
 Plug 'nono/vim-handlebars'
+"" Terraform
+Plug 'hashivim/vim-terraform'
+"" Starlark
+Plug 'cappyzawa/starlark.vim'
+"" Python
+" Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 
 " /Languages
 Plug 'chiedo/vim-case-convert'
@@ -77,6 +86,12 @@ Plug 'junegunn/vim-peekaboo'
 
 " Play around with tags and LSP symbols
 Plug 'liuchengxu/vista.vim'
+
+" Icons?!?
+Plug 'ryanoasis/vim-devicons'
+
+" Let's see…
+Plug 'github/copilot.vim'
 
 " Initialize plugin system
 call plug#end()

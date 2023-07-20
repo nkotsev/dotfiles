@@ -32,4 +32,8 @@ if has('nvim')
   " Enable omnicompletion
   set omnifunc=syntaxcomplete#Complete
   nnoremap <buffer> <leader><leader><leader> :IcedCommandPalette<CR>
+
+  let maplocalleader="\<space>"
 endif
+
+nnoremap <F3>Vista coc<cr>

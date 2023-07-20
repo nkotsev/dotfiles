@@ -171,8 +171,9 @@ export REVIEW_BASE=master
 # Load zplug
 # source ~/.zplug.zsh
 
-export HOMEBREW_GITHUB_API_TOKEN=$(cat ~/.secrets/homebrew-personal-token-v2)
-export GITHUB_TOKEN=$(cat ~/.secrets/homebrew-personal-token-v2)
+[ -f ~/.secrets/homebrew-personal-token-v2 ] && export HOMEBREW_GITHUB_API_TOKEN=$(cat ~/.secrets/homebrew-personal-token-v2)
+[ -f ~/.secrets/homebrew-personal-token-v2 ] && export GITHUB_TOKEN=$(cat ~/.secrets/homebrew-personal-token-v2)
+[ -f ~/.secrets/modulr ] && source ~/.secrets/modulr
 
 # Multiline editing via vim with "v" binding
 autoload -U edit-command-line
@@ -195,15 +196,25 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # Load up kubectl autocompletions
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
-function fuck_okta_aws() {
-if [ -z "$1" ]; then
-  echo "ERROR => specify profile"
-else
-  /usr/local/bin/okta_aws -u nikolay.kotzev -e https://fundingcircle.okta.com/home/amazon_aws/0oa9dw16cdiT5Hntw0x7/272 -p "$1" -s admin-in-$1 && \
-  source ~/.aws/.aws_env_$1
-fi
-}
-
 eval "$(jump shell)" # Initialize jump
 
 export MANPAGER='nvim +Man!'
+
+# Java version manager initialization
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+# Confluent platform location
+export CONFLUENT_HOME="/Users/nikolay.kotzev/confluent/bin/confluent-6.2.1"
+
+# Try to fix GPG's tty probles
+export GPG_TTY=$(tty)
+export PATH="/usr/local/opt/python@3.10/bin:$PATH"
+
+# Add new poetry path
+export PATH="/Users/nikolay.kotzev/.local/bin:$PATH"
+
+# Pyenv setup
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
